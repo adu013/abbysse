@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     # Custom apps
     'answers.apps.AnswersConfig',
+    'frontend.apps.FrontendConfig',
     'profiles.apps.ProfilesConfig',
     'questions.apps.QuestionsConfig',
 ]
