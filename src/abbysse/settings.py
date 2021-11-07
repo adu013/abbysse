@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Third-party apps
 
     # Custom apps
+    'answers.apps.AnswersConfig',
     'profiles.apps.ProfilesConfig',
     'questions.apps.QuestionsConfig',
 ]
