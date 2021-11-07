@@ -18,6 +18,10 @@ class Question(models.Model):
     )
     question = models.TextField(null=False, blank=False)
     anonymous = models.BooleanField(default=False)
+    locked = models.BooleanField(default=False)
+
+    created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.question[:50]
