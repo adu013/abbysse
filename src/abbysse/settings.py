@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     # Custom apps
     'profiles.apps.ProfilesConfig',
+    'questions.apps.QuestionsConfig',
 ]
 
 MIDDLEWARE = [
