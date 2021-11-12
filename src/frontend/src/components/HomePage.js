@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 
 import {
@@ -8,6 +7,9 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
+
+import Home from './Home.js';
+
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -23,12 +25,4 @@ export default class HomePage extends Component {
       </Router>
     );
   }
-}
-
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
 }
