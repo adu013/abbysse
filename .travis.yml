@@ -4,6 +4,7 @@ python:
 
 env:
   - SECRET_KEY="SECRET_KEY123345"
+  - DJANGO=1.8 DB=mysql
 
 services:
   - mysql
