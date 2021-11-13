@@ -1,3 +1,11 @@
+# questions/test.py
 from django.test import TestCase
 
-# Create your tests here.
+from .models import Question
+
+
+class QuestionTestCase(object):
+    """
+    QuestionTestCase tests model Question
+    """
+    pass
