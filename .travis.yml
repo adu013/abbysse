@@ -3,8 +3,7 @@ python:
   - "3.8"
 
 env:
-  - SECRET_KEY="SECRET_KEY123345"
-  - DJANGO=1.8 DB=mysql
+  - SECRET_KEY="SECRET_KEY123345" DJANGO=3.2 DB=mysql
 
 services:
   - mysql
