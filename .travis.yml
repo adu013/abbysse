@@ -10,7 +10,7 @@ services:
 
 install:
   - pipenv install
-  - pip install -r src/requirements.txt
+  - pip install -r requirements.txt
 
 script:
   - python src/manage.py test
