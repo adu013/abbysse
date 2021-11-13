@@ -6,11 +6,14 @@ env:
   - SECRET_KEY="SECRET_KEY123345"
 
 services:
-  - postgres
+  - mysql
 
 install:
   - pipenv install
   - pip install -r requirements.txt
+
+before_script:
+  - mysql -e 'create database test;' -u root
 
 script:
   - python src/manage.py test
