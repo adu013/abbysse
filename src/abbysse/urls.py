@@ -17,6 +17,12 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    # frontend
     path('', include('frontend.urls')),
+
+    # admin
     path('admin/', admin.site.urls),
+
+    # custom apps
+    path('questions/', include('questions.urls')),
 ]
