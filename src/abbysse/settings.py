@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third-party apps
+    'rest_framework',
 
     # Custom apps
     'answers.apps.AnswersConfig',
@@ -115,6 +116,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Rest Framework
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -133,6 +141,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = '/static/'
 
 # Default primary key field type
