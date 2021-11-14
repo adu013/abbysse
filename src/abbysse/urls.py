@@ -31,5 +31,6 @@ urlpatterns = [
     path('docs/api/', schema_view),
 
     # custom apps
+    path('answers/', include('answers.urls')),
     path('questions/', include('questions.urls')),
 ]
