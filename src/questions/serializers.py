@@ -11,6 +11,7 @@ class QuestionSerializer(ModelSerializer):
         fields = [
             'id',
             'question',
+            'user',
             'anonymous',
             'locked',
             'created_on',
