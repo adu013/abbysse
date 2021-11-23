@@ -16,13 +16,13 @@ Including another URLconf
 from rest_framework_swagger.views import get_swagger_view
 
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, re_path
 
 schema_view = get_swagger_view(title="Abbysse API")
 
 urlpatterns = [
     # frontend
-    path('', include('frontend.urls')),
+    # path('', include('frontend.urls')),
 
     # admin
     path('admin/', admin.site.urls),
@@ -33,4 +33,7 @@ urlpatterns = [
     # custom apps
     path('answers/', include('answers.urls')),
     path('questions/', include('questions.urls')),
+
+    # frontend
+    re_path(r'^(?:.*)/?$', include('frontend.urls')),
 ]
